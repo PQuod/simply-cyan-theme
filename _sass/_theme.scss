@@ -71,7 +71,7 @@ a {
   }
 }
 
-p {
+p, li {
   font-size: var(--font-size);
   margin-bottom: var(--line-height);
 }
@@ -215,7 +215,14 @@ main {
 /** PAGES **/
 article {
   max-width: var(--text-width);
-  margin: calc(var(--line-height) * 3) auto;
+  margin: auto;
+  margin-top: calc(var(--line-height) * 3);
+  margin-bottom: calc(var(--line-height) * 3);
+
+}
+
+article h1,h2,h3,h4,h5,h6{
+  margin-bottom: var(--line-height);
 }
 
 .page-typo-type {
@@ -249,4 +256,6 @@ footer {
   font-size: calc(var(--font-size) / 2);
   text-align: center;
   width: 100%;
+  background: var(--bg-color);
+  font-family: var(--font-sansserif);
 }

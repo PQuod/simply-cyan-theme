@@ -22,7 +22,7 @@ lang: en-GB # The site language
 encoding: utf-8
 description: "Simply Cyan is a theme developed for Jekyll" # The description of the site
 copyright: "© Symply Cyan, created by Lucie Desaubliaux." # The mentions that appear in the site's footer
-url: "" # The base hostname for you site, e.g. http://mysite.com
+url: "https://pquod.github.io/simply-cyan-theme/" # The base hostname for you site, e.g. http://mysite.com
 baseurl: "" # The subpath of your site, e.g. /blog
 repo:
 email: youremail@something.com # The owner's email

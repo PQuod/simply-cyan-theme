@@ -44,6 +44,7 @@ exclude:
   - simply-cyan.gemspec
   - .jekyll-cache
   - LICENSE.txt
+  - CODE_OF_CONDUCT.md
 
 # 4. Plugins
 plugins:

@@ -1,0 +1,25 @@
+<header>
+    <div class="site_title" role="heading" aria-level="1">
+      <a href="{{ '/' | relative_url }}" class="site-title">
+        {{ site.title | escape }}
+      </a>
+    </div>
+  <nav>
+      {% assign pages = site.pages %}
+      {% for page in pages %}
+        {% if page.nav_header == true %}
+            <a href="{{ page.url | relative_url }}" class="pages_links">
+              <span class="pages_names">{{ page.title | escape }}</span>
+            </a>
+        {% endif %}
+      {% endfor %}
+  </nav>
+  <div class="site_functions">
+    {% if site.darkmode == true %}
+      <label class="dark-mode-label" aria-label="Night Mode" for="dark-mode"></label>
+    {% endif %}
+    {% if site.typosize == true %}
+      <label class="typo-plus-label" aria-label="Change font size" for="typo-plus"></label>
+    {% endif %}
+  </div>
+</header>

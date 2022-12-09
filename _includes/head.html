@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{page.lang | default: site.lang | default: "en"}}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, intial-scale=1">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+  </head>

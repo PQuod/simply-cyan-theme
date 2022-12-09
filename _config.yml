@@ -1,0 +1,70 @@
+#Welcome to Jekyll and thank you for using Simply-cyan !
+#
+# This config file allow you to set up the different parameters of your site.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# Here are the contents of this file:
+# 1. Site settings
+# 2. Site display settings
+# 3. Ignored files while building
+# 4. Plugins
+# 5. Collections
+# 6. Jekyll settings
+
+# 1. SITE SETTINGS
+# This is where you can personnalize the different parameters of your website, such as its title, its description etc.
+# You'll be able to call these different parameters via {{ site.yourparam }} (e.g. {{ site.title }} to retrieve the title of you site on any of your page).
+# You can add to this list any new parameter you wish, and access it anywhere in the templates.
+
+title: "Simply Cyan - Theme" # The site title
+lang: en-GB # The site language
+encoding: utf-8
+description: "Simply Cyan is a theme developed for Jekyll" # The description of the site
+copyright: "© Symply Cyan, created by Lucie Desaubliaux." # The mentions that appear in the site's footer
+url: "" # The base hostname for you site, e.g. http://mysite.com
+baseurl: "" # The subpath of your site, e.g. /blog
+repo:
+email: youremail@something.com # The owner's email
+# google_analytics: ""
+# google_analytics_anonymize_ip: ""
+
+# 2. SITE AVALAIBLE FUNCTIONS
+darkmode: true # Allows the switch between dark and light mode
+typosize: true # Allows to change the size of the font
+home-posts-limit: 10 # Change the limit of posts displayed on the home page
+
+# 3. IGNORED FILES WHILE building
+# These files are essential to the building of your website, but you don't want them to be built with the others
+exclude:
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - simply-cyan.gemspec
+  - .jekyll-cache
+  - LICENSE.txt
+
+# 4. Plugins
+plugins:
+  - jekyll-feed
+
+# 5. Collections
+# Authors's list
+collections:
+  authors:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: author
+    values:
+      layout: "author"
+
+# 6. Jekyll settings
+permalink: pretty # Permalink will be /YYY/MM/DD/page-name/
+timezone: Europe/London
+
+

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --bg-color: #f2f2f2;
+  --font-serif: 'Libre Baskerville', serif;
+  --font-sansserif: 'Montserrat', sans-serif;
+  --font-color: #333333;
+  --font-size: 22px;
+  --text-width:35em;
+  --text-font:var(--font-serif);
+  --line-height: calc(var(--font-size)*2);
+  --custom-color: cyan;
+  --lines: linear-gradient(to top, cyan 50%, rgba(255,255,255,0) 50%);
+  --contrast-color: linear-gradient(to top, #ef1a63; 50%, rgba(255,255,255,0) 50%);
+  --quote-color:#e7e8ea;
+  --custom-rss:13px;
+  --dark-mode-label: "DARK MODE";
+  --light-mode-label: "LIGHT MODE";
+  --typo-plus-label: "A+";
+  --typo-moins-label: "A-";
+  --sans-serif-label: " SANS-SERIF FONT";
+  --serif-label: "SERIF FONT";
+}
+
+/* Dark-mode styles */
+#dark-mode:checked,
+#dark-mode:checked ~ .theme-container {
+  --bg-color: #333;
+  --font-color: #eee;
+  --custom-color: #ef1a63;
+  --lines: linear-gradient(to top, #ef1a63 50%, rgba(255,255,255,0) 50%);
+  --contrast-color: linear-gradient(to top, cyan; 50%, rgba(255,255,255,0) 50%);
+  --quote-color:#333642;
+}
+
+.dark-mode-label::before {
+  content: var(--dark-mode-label);
+}
+
+.dark-mode-checkbox:checked ~ .theme-container .dark-mode-label::before {
+  content: var(--light-mode-label);
+}
+
+/* Typo size */
+#typo-plus:checked,
+#typo-plus:checked ~ .theme-container {
+  --font-size:30px;
+  --line-height:35px;
+  --text-width:60em;
+  .site_title{
+    font-size:calc(var(--font-size)*3);
+    line-height:calc(var(--line-height)*3);
+  }
+  .site_functions{
+    margin-top:20px;
+  }
+   --custom-rss:30px;
+}
+
+#typo-dys:checked,
+#typo-dys:checked ~ .theme-container {
+ --text-font: var(--font-sansserif);
+}
+
+.typo-plus-label::before{
+  content: var(--typo-plus-label);
+}
+
+.typo-plus-checkbox:checked ~ .theme-container .typo-plus-label::before {
+  content: var(--typo-moins-label);
+}
+
+/* Typo-dys */
+.typo-dys-label::before{
+  content: var(--sans-serif-label);
+  font-size:calc(var(--font-size)/1.5);
+  font-family:var(--font-sansserif);
+  background:var(--contrast-color);
+}
+
+.typo-dys-checkbox:checked ~ .theme-container .typo-dys-label::before {
+  content: var(--serif-label);
+  font-family:var(--font-serif);
+  font-size:calc(var(--font-size)/1.5)
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap; /* 1. */
+}

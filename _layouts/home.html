@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article>
+  {% assign posts = site.posts %}
+  {% assign posts_limit = site.home-posts-limit %}
+  {% if posts.size > 0 %}
+    <div class="apercu-post" role="list">
+      {% for post in posts limit: posts_limit %}
+        <a href="{{ post.url | relative_url }}" role="listitem">
+          <h1 class="list_post_title"><span class="a-nude">{{ post.title | escape }}</span></h1>
+        </a>
+        <!-- Faire une itération si plusieurs auteurs ? -->
+        {% assign authors = post.author | join: ", " %}
+        <h2 class="list_post_info">{{ authors }} ✷ {{ post.date | date_to_long_string }}</h2>
+        <div class="line"></div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article>
+    <h1 class="custom-pages-title">All the authors</h1>
+    <div class="authors-list">
+        {% assign sorted_authors = site.authors | sort %}
+        {% for author in sorted_authors %}
+            <a href="{{ author.url | relative_url }}">
+                <h2 class="list_post_title">
+                    <span class="a-nude">&#10040; {{ author.title }} &#10040;</span>
+                </h2>
+            </a>
+        {% endfor %}
+    </div>
+</article>

@@ -1,0 +1,31 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.dark-mode-checkbox');
+
+  checkbox.checked = localStorage.getItem('darkMode') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('darkMode', event.currentTarget.checked);
+  });
+});
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-plus-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoPlus') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoPlus', event.currentTarget.checked);
+  });
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-dys-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoDys') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoDys', event.currentTarget.checked);
+  });
+});
+</script>

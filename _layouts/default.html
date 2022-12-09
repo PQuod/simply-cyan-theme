@@ -1,0 +1,14 @@
+
+{%- include head.html -%}
+  <body>
+    {%- include functions.html -%}
+    {%- include header.html -%}
+    <main class="page_content" aria-label="Content">
+      
+    {{ content | markdownify }}
+
+    </main>
+    {%- include footer.html -%}
+    {%- include functionsscript.html -%}
+  </body>
+</html>

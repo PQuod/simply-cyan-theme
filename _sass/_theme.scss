@@ -3,85 +3,101 @@
   padding: 0;
 }
 
-
-.theme-container{
-  background-color:var(--bg-color);
-  color:var(--font-color);
+.theme-container {
+  background-color: var(--bg-color);
+  color: var(--font-color);
   font-family: var(--text-font);
 }
 
-html{
-  height:100%;
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+html {
+  height: 100%;
 }
 
 body {
-  height:100%;
+  height: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   font-size: var(--font-size);
-  line-height:var(--line-height);
-  background-color:var(--bg-color);
-  color:var(--font-color);
+  line-height: var(--line-height);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 .grow {
   flex-grow: 1;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family:var(--font-sansserif);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sansserif);
 }
 
-h1{
-  font-size:calc(var(--font-size)*1.7);
+h1 {
+  font-size: calc(var(--font-size) * 1.7);
 }
 
-h2{
-  font-size:calc(var(--font-size)*1.3);
+h2 {
+  font-size: calc(var(--font-size) * 1.3);
 }
 
-a{
-  color:var(--font-color);
-  text-decoration:none;
+a {
+  color: var(--font-color);
+  text-decoration: none;
 }
 
-.a-nude{
+.a-nude {
   background-size: 0% 100%;
   transition: background-size 0.5s 0s;
-  &:hover{
+  &:hover {
     background: var(--lines);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 }
 
-p{
-  font-size:var(--font-size);
-  margin-bottom:var(--line-height);
+p {
+  font-size: var(--font-size);
+  margin-bottom: var(--line-height);
 }
 
-hr{
-  margin-bottom:var(--line-height);
+hr {
+  margin-bottom: var(--line-height);
 }
 
-li{
-list-style-type: none;
+li {
+  list-style-type: none;
 }
 
 li:before {
   content: "- ";
 }
 
-blockquote{
-  margin-right:25px;
-  margin-left:25px;
-  margin-bottom:20px;
-  border-width:2px;
-  background:var(--quote-color);
-  padding:10px 10px 1px 20px;
-  border-left-width:5px;
-  border-left-style:solid;
-  border-left-color:var(--custom-color);
+blockquote {
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  border-width: 2px;
+  background: var(--quote-color);
+  padding: 10px 10px 1px 20px;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: var(--custom-color);
   quotes: "“" "”" "‘" "’";
 }
 
@@ -89,91 +105,89 @@ q {
   quotes: "‘" "’" "“" "”";
 }
 
-.footnotes::before{
+.footnotes::before {
   content: "---";
 }
 
 .footnotes li {
   counter-increment: my-counter;
-  margin-bottom:var(--line-height);
+  margin-bottom: var(--line-height);
 }
 
-.footnotes li::before{
+.footnotes li::before {
   content: counter(my-counter) ". ";
   font-weight: bold;
 }
 
-.footnotes p{
-  display:inline;
+.footnotes p {
+  display: inline;
 }
 
-label{
-  cursor:pointer;
-  font-weight:bold;
+label {
+  cursor: pointer;
+  font-weight: bold;
   font-size: var(--font-size);
   background: var(--lines);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transition: background-size 0.5s 0s;
-  margin-right:20px;
-  padding-bottom:2px;
+  margin-right: 20px;
+  padding-bottom: 2px;
 }
 
-label:hover{
-    background-size: 0% 100%;
+label:hover {
+  background-size: 0% 100%;
 }
 
 /** HEADER **/
-header{
-  font-family:var(--font-sansserif);
+header {
+  font-family: var(--font-sansserif);
   text-transform: uppercase;
-  margin:30px;
-  line-height: calc(var(--line-height)/1.5);
+  margin: 30px;
+  line-height: calc(var(--line-height) / 1.5);
 }
 
-.site_title{
+.site_title {
   text-transform: uppercase;
   display: inline-block;
-  font-size: calc(var(--font-size)*2.5);
+  font-size: calc(var(--font-size) * 2.5);
   padding-bottom: 5px;
   font-weight: bold;
-  background:none;
+  background: none;
 }
 
-.pages_links{
+.pages_links {
   display: inline-block;
-  font-size: calc(var(--font-size)*1.5);
+  font-size: calc(var(--font-size) * 1.5);
   padding-right: 20px;
   font-weight: bold;
 }
 
-.pages_names{
+.pages_names {
   background: var(--lines);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transition: background-size 0.5s 0s;
-  padding-bottom:5px;
-    &:hover{
-      background-size: 0% 100%;
-    }
+  padding-bottom: 5px;
+  &:hover {
+    background-size: 0% 100%;
+  }
 }
 
-.site_functions{
-  margin-top:10px;
+.site_functions {
+  margin-top: 10px;
 }
-
-
 
 /** MAIN **/
-main{
-  margin:30px;
-  min-height:55%;
-  a{
+main {
+  margin: 30px;
+  min-height: 55%;
+  a {
     background: var(--lines);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: background-size 0.5s 0s;
-    &:hover{
+    &:hover {
       background-size: 0% 100%;
     }
   }
@@ -182,57 +196,57 @@ main{
 .line {
   height: 30px;
   border-bottom: 10px solid var(--custom-color);
-  transform:rotate(2deg);
-  position:relative;
-  top:var(--line-height);
-  margin-bottom:calc(var(--line-height)*3)
+  transform: rotate(2deg);
+  position: relative;
+  top: var(--line-height);
+  margin-bottom: calc(var(--line-height) * 3);
 }
 
 /** HOME **/
-.list_post_title, .list_post_info{
-  font-weight:normal;
+.list_post_title,
+.list_post_info {
+  font-weight: normal;
 }
 
-.list_post_info{
-  font-size:22px;
+.list_post_info {
+  font-size: 22px;
 }
-
 
 /** PAGES **/
-article{
+article {
   max-width: var(--text-width);
-  margin:calc(var(--line-height)*3) auto;
+  margin: calc(var(--line-height) * 3) auto;
 }
 
-.page-typo-type{
-  margin-bottom:var(--line-height);
-  text-align:right;
-}
-
-/** CUSTOM-PAGES (archives & authors) **/
-.custom-pages-title{
-  margin-bottom: calc(var(--line-height)*2);
-}
-
-.archives-table{
-   width:100%;
-}
-
-.archives-date{
+.page-typo-type {
+  margin-bottom: var(--line-height);
   text-align: right;
 }
 
-.authors-list{
-  text-align:center;
+/** CUSTOM-PAGES (archives & authors) **/
+.custom-pages-title {
+  margin-bottom: calc(var(--line-height) * 2);
 }
 
-.author-archives{
-  margin-top:var(--line-height);
+.archives-table {
+  width: 100%;
+}
+
+.archives-date {
+  text-align: right;
+}
+
+.authors-list {
+  text-align: center;
+}
+
+.author-archives {
+  margin-top: var(--line-height);
 }
 
 /** FOOTER **/
-footer{
-  font-size: calc(var(--font-size) / 2 );
+footer {
+  font-size: calc(var(--font-size) / 2);
   text-align: center;
-  width:100%;
+  width: 100%;
 }

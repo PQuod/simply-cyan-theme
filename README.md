@@ -11,29 +11,54 @@ Symply Cyan can feature a multitude of authors and offers a page to display all 
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+Add this line to your Jekyll site's `Gemfile` to add the theme as a dependancy:
 
 ```ruby
 gem "simply-cyan"
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+Run `bundle install` in the root file of your project: 
+
+Add this line to your Jekyll site's `_config.yml` to set the theme:
 
 ```yaml
 theme: simply-cyan
 ```
 
-And then execute:
+Run `bundle exec jekyll serve` to build and serve your site.
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install simply-cyan
+You can use the `config.yml` to update the configuration of your website and set things such as its title, description, navigation links and a lot more
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### Customizing styles
+
+You can customize many style parameters of the Simply Cyan theme by changing the different variables in the `settings.scss` file of the project (`_sass/_settings.scss`). You'll find there such parameters as the colors of the dark and white modes, fonts, line height, font sizes etc. 
+
+You can also overwrite the complete theme with your own custom file by matching its filename and path.
+
+### Accessing site parameters
+
+Several parameters are also accessible in the `config.yml` file. For example, you can choose there whether to display or not the different reading functions (dark mode, big fonts etc.) of the site.
+
+### Creating a post
+
+You are now ready to add content to your new jekyll site. You can do so by adding new posts in the `_posts` folder. Be sure your new post begins with the same front matter lines than the ones in the example posts  (check [Jekyll documentation](https://jekyllrb.com/docs/posts/) in case you're not sure how to make your first post):
+
+```
+---
+layout: post
+title: "Example Post"
+date: 2022-11-15
+author:
+  - "Someone"
+  - "Someone else"
+---
+```
+
+### Managing different authors
+
+Note that if you want to have all of the authors of your site displayed on the authors page, you'll have to create a new file for each of them in the `_authors` folder. The title of this new file must match the way you wrote the author's name in the author line of the post front matter.
 
 ## Contributing
 

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, intial-scale=1">
+    {% if page.indexing == false %}
+      <meta name="robots" content="noindex">
+    {% endif %}
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">

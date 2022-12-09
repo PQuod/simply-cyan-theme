@@ -18,19 +18,22 @@ Symply Cyan can feature a multitude of authors and offers a page to display all 
 
 ## Features
 
-- Available as a theme gem
+- Available as a theme gem and Github Pages theme
 - Clear and elegant design that can be used out of the box or as solid starting point
 - Compatible with all major browsers
 - Dark/light mode
 - The size of the fonts can be enlarged by the visitors
 - A toggle allows the visitors to switch between serif and sans-serif fonts to help with people experiencing dyslexia
 - Configurable colors and fonts in a setting file
-- Single page grouping all the authors of the site and a page by author/category displaying a description and all the posts written.
+- Single page grouping all the authors of the site and a page by author/category displaying a description and all the posts written
+- Documentation
 
 ## How to start and use Simply Cyan
 
 Visit the readme.md file [on the theme's repo]() to know more about how to get started with a Jekyll theme and how to customize Simply Cyan.
 
+## Contact
 
+If you have any questions regarding this theme or if you have ideas about how to make it better, new functionalities to add or new ways to display things, feel free to contact me here: l.desaubliaux@gmail.com, I'd be happy to hear from you!
 
 

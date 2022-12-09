@@ -1,98 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-  --bg-color: #f2f2f2;
-  --font-serif: 'Libre Baskerville', serif;
-  --font-sansserif: 'Montserrat', sans-serif;
-  --font-color: #333333;
-  --font-size: 22px;
-  --text-width:35em;
-  --text-font:var(--font-serif);
-  --line-height: calc(var(--font-size)*2);
-  --custom-color: cyan;
-  --lines: linear-gradient(to top, cyan 50%, rgba(255,255,255,0) 50%);
-  --contrast-color: linear-gradient(to top, #ef1a63; 50%, rgba(255,255,255,0) 50%);
-  --quote-color:#e7e8ea;
-  --custom-rss:13px;
-  --dark-mode-label: "DARK MODE";
-  --light-mode-label: "LIGHT MODE";
-  --typo-plus-label: "A+";
-  --typo-moins-label: "A-";
-  --sans-serif-label: " SANS-SERIF FONT";
-  --serif-label: "SERIF FONT";
+  // Variable for the light mode
+  --bg-color: #f2f2f2; // Background color
+  --font-serif: "Libre Baskerville", serif; // Serif font
+  --font-sansserif: "Montserrat", sans-serif; // Sans-Serif font
+  --font-color: #333333; // Font color
+  --font-size: 22px; // Font size
+  --text-width: 35em; // Width of the area where the content of the pages and posts are displayed
+  --text-font: var(--font-serif); // Default font for the text
+  --line-height: calc(var(--font-size) * 2); // Line height
+  --custom-color: cyan; // Complementary color, for the lines and underlinings
+  --lines: linear-gradient(
+    to top,
+    var(--custom-color) 50%,
+    rgba(255, 255, 255, 0) 50%
+  ); // Lines
+  --quote-color: #e7e8ea; // Background-color for quotes
+  --dark-mode-label: "DARK MODE"; // Label displayed in the header to toggle dark mode
+  --light-mode-label: "LIGHT MODE"; // Label displayed in the header to toggle light mode
+  --typo-plus-label: "A+"; // Label displayed in the header to enlarge the font size
+  --typo-moins-label: "A-"; // Label displayed in the header to reduce the font size
+  --sans-serif-label: " SANS-SERIF FONT"; // Label displayed at the top of posts to change the font-style to sans-serif
+  --serif-label: "SERIF FONT"; // Label displayed at the top of posts to change the font-style to serif
 }
 
 /* Dark-mode styles */
 #dark-mode:checked,
 #dark-mode:checked ~ .theme-container {
-  --bg-color: #333;
-  --font-color: #eee;
-  --custom-color: #ef1a63;
-  --lines: linear-gradient(to top, #ef1a63 50%, rgba(255,255,255,0) 50%);
-  --contrast-color: linear-gradient(to top, cyan; 50%, rgba(255,255,255,0) 50%);
-  --quote-color:#333642;
+  --bg-color: #333; // Background color
+  --font-color: #eee; // Font color
+  --custom-color: #ef1a63; // Complementary color, for the lines and underlinings
+  --lines: linear-gradient(
+    to top,
+    var(--custom-color) 50%,
+    rgba(255, 255, 255, 0) 50%
+  ); // Lines
+  --quote-color: #333642; // Background-color for quotes
 }
 
 .dark-mode-label::before {
-  content: var(--dark-mode-label);
+  content: var(
+    --dark-mode-label
+  ); // If you want to change the displayed text to change mode, change it in the :root section of this file
 }
 
 .dark-mode-checkbox:checked ~ .theme-container .dark-mode-label::before {
-  content: var(--light-mode-label);
+  content: var(
+    --light-mode-label
+  ); // If you want to change the displayed text to change mode, change it in the :root section of this file
 }
 
-/* Typo size */
+/* Large font mode styles */
 #typo-plus:checked,
 #typo-plus:checked ~ .theme-container {
-  --font-size:30px;
-  --line-height:35px;
-  --text-width:60em;
-  .site_title{
-    font-size:calc(var(--font-size)*3);
-    line-height:calc(var(--line-height)*3);
+  --font-size: 30px; // Font-size when large fonts are toggled
+  --line-height: 35px; // Line height when large fonts are toggled
+  --text-width: 60em; // Width of the area where the content of the pages and posts are displayed
+  .site_title {
+    font-size: calc(var(--font-size) * 3);
+    line-height: calc(var(--line-height) * 3);
   }
-  .site_functions{
-    margin-top:20px;
+  .site_functions {
+    margin-top: 20px;
   }
-   --custom-rss:30px;
+}
+
+.typo-plus-label::before {
+  content: var(
+    --typo-plus-label
+  ); // If you want to change the displayed text to change mode, change it in the :root section of this file
+}
+
+.typo-plus-checkbox:checked ~ .theme-container .typo-plus-label::before {
+  content: var(
+    --typo-moins-label
+  ); // If you want to change the displayed text to change mode, change it in the :root section of this file
+}
+
+/* Typo-dys */
+.typo-dys-label::before {
+  content: var(
+    --sans-serif-label
+  ); // If you want to change the displayed text to change mode, change it in the :root section of this file
+  font-size: calc(
+    var(--font-size) / 1.5
+  ); // Size font of the displayed text to switch between serif and sans-serif
+  font-family: var(--font-sansserif);
+}
+
+.typo-dys-checkbox:checked ~ .theme-container .typo-dys-label::before {
+  content: var(
+    --serif-label
+  ); // If you want to change the displayed text to change mode, change it in the :root section of this file
+  font-family: var(--font-serif);
 }
 
 #typo-dys:checked,
 #typo-dys:checked ~ .theme-container {
- --text-font: var(--font-sansserif);
-}
-
-.typo-plus-label::before{
-  content: var(--typo-plus-label);
-}
-
-.typo-plus-checkbox:checked ~ .theme-container .typo-plus-label::before {
-  content: var(--typo-moins-label);
-}
-
-/* Typo-dys */
-.typo-dys-label::before{
-  content: var(--sans-serif-label);
-  font-size:calc(var(--font-size)/1.5);
-  font-family:var(--font-sansserif);
-  background:var(--contrast-color);
-}
-
-.typo-dys-checkbox:checked ~ .theme-container .typo-dys-label::before {
-  content: var(--serif-label);
-  font-family:var(--font-serif);
-  font-size:calc(var(--font-size)/1.5)
-}
-
-.sr-only {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap; /* 1. */
+  --text-font: var(--font-sansserif);
 }

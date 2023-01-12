@@ -181,7 +181,7 @@ header {
 
 /** MAIN **/
 main {
-  margin: 30px;
+  padding: 30px;
   min-height: 55%;
   a {
     background: var(--lines);
@@ -264,4 +264,61 @@ footer {
   width: 100%;
   background: var(--bg-color);
   font-family: var(--font-sansserif);
+}
+
+
+/* Variables for responsive layouts */
+@media screen and (max-width: 801px)
+{
+  :root{
+    line-height: calc(var(--font-size)*1.5);
+  }
+
+  .site_title{
+    margin-bottom:calc(var(--line-height)*0.5);
+  }
+
+  .site_title, .list_post_title{
+    font-size:calc(var(--font-size)*1.5);
+    }
+
+  .pages_links{
+    font-size:var(--font-size);
+  }
+
+  label{
+    font-size: calc(var(--font-size)*0.8);
+  }
+
+  .typo-plus-label{
+    display:none;
+  }
+
+  article{
+    margin-top: var(--line-height);
+    margin-bottom: var(--line-height);
+  }
+
+  .list_post_info{
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  tr {
+    line-height: var(--line-height);
+  }
+
+  .archives-date{
+    display:none;
+  }
+
+  .authors-list{
+    text-align:left;
+  }
+
+  .desktop-star{
+    display:none;
+  }
 }

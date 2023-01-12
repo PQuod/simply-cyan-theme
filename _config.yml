@@ -49,6 +49,9 @@ exclude:
 # 4. Plugins
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+remote_theme: PQuod/simply-cyan-theme
 
 # 5. Collections
 # Authors's list

@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["l.desaubliaux@gmail.com"]
 
   spec.summary       = "Simply-cyan is a clear and elegant theme dedicated to text-based websites. It contains an archives functionality and can handle multiple authors. The theme also has a dark/light mode."
-  spec.homepage      = "https://github.com/PQuod/internet-exploreur-theme"
+  spec.homepage      = "https://pquod.github.io/simply-cyan-demo/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }

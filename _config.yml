@@ -17,13 +17,13 @@
 # You'll be able to call these different parameters via {{ site.yourparam }} (e.g. {{ site.title }} to retrieve the title of you site on any of your page).
 # You can add to this list any new parameter you wish, and access it anywhere in the templates.
 
-title: "Simply Cyan - Theme" # The site title
+title: "A site made with Simply Cyan" # The site title
 lang: en-GB # The site language
 encoding: utf-8
-description: "Simply Cyan is a theme developed for Jekyll" # The description of the site
-copyright: "© Symply Cyan, created by Lucie Desaubliaux." # The mentions that appear in the site's footer
+description: "An amazing website" # The description of the site
+copyright: "© It belongs to me." # The mentions that appear in the site's footer
 url: "" # The base hostname for you site, e.g. http://mysite.com
-baseurl: "/simply-cyan-theme" # The subpath of your site, e.g. /blog
+baseurl: "" # The subpath of your site, e.g. /blog
 repo:
 email: youremail@something.com # The owner's email
 # google_analytics: ""

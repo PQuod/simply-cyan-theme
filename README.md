@@ -2,6 +2,8 @@
 
 Simply Cyan is a Jekyll theme dedicated to text and reading. This theme focuses on readability and clarity.
 
+You can visit the demo website of this theme [here](https://pquod.github.io/simply-cyan-demo/).
+
 Three main functions are at work to facilitate the reader's experience : a classic dark/light mode, but also toggles to change the font size and get bigger characters or to change the font-style (by default meant to switch between serif and sans-serif fonts).
 
 The design of Simply Cyan is sober and elegant, yet pop with its bright colorful oblique stripes punctuating the screen.
@@ -75,6 +77,8 @@ The archives page displays the integrality of the posts published on your site.
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/pquod/simply-cyan. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+If you have any idea about improving this theme or if you find any lack in its documentation, feel free to write at l.desaubliaux@gmail.com, I'd be happy to keep on making this theme better and better for your use!
 
 ## Development
 

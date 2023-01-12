@@ -9,6 +9,8 @@ permalink: /about/
 
 Simply Cyan is a [Jekyll](https://github.com/jekyll/jekyll) theme dedicated to text and reading. This theme focuses on readability and clarity. Different available functions are at work to facilitate the reader's experience.
 
+You can view the demo of the theme [here](https://pquod.github.io/simply-cyan-demo/) 
+
 The design of Simply Cyan is sober and elegant, yet pop with its bright colorful oblique stripes punctuating the screen.
 
 Symply Cyan can feature a multitude of authors and/or categories and it offers a page to display their description, as well as an archives page to display all the site's posts.

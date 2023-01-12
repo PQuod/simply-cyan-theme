@@ -78,20 +78,17 @@ p, li {
 
 hr {
   margin-bottom: var(--line-height);
+  border: 3px solid var(--custom-color);
 }
 
-li {
-  list-style-type: none;
-}
-
-li:before {
-  content: "- ";
+tr {
+  line-height: calc(var(--line-height)/3);
 }
 
 blockquote {
   margin-right: 25px;
   margin-left: 25px;
-  margin-bottom: 20px;
+  margin-bottom: var(--line-height);
   border-width: 2px;
   background: var(--quote-color);
   padding: 10px 10px 1px 20px;
@@ -103,6 +100,10 @@ blockquote {
 
 q {
   quotes: "‘" "’" "“" "”";
+}
+
+code{
+  background: var(--quote-color);
 }
 
 .footnotes::before {
@@ -254,6 +255,7 @@ article h1,h2,h3,h4,h5,h6{
 .author-archives {
   margin-top: var(--line-height);
 }
+
 
 /** FOOTER **/
 footer {

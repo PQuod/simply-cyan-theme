@@ -10,8 +10,7 @@ layout: default
         <a href="{{ post.url | relative_url }}" role="listitem">
           <h1 class="list_post_title"><span class="a-nude">{{ post.title | escape }}</span></h1>
         </a>
-        <!-- Faire une itération si plusieurs auteurs ? -->
-        {% assign authors = post.author | join: ", " %}
+        {% assign authors = post.category | join: ", " %}
         <h2 class="list_post_info">{{ authors }} ✷ {{ post.date | date_to_long_string }}</h2>
         <div class="line"></div>
       {% endfor %}

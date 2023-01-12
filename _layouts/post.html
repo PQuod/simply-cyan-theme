@@ -3,3 +3,11 @@ layout: page
 ---
 
 {{ content }}
+{% assign authors = page.category %}
+<div class="post_footer">
+  <h2 class="list_post_info">
+    {% for author in authors %}
+      <a href="{{ site.baseurl }}/categories/{{ author | slugify }}">{{ author }}</a> ✷
+    {% endfor %}  {{ page.date | date_to_long_string }}
+  </h2>
+</div>

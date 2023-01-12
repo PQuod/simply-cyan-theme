@@ -58,7 +58,19 @@ author:
 
 ### Managing different authors
 
-Note that if you want to have all of the authors of your site displayed on the authors page, you'll have to create a new file for each of them in the `_authors` folder. The title of this new file must match the way you wrote the author's name in the author line of the post front matter.
+Note that if you want to have all of the authors of your site displayed on the authors page, you'll have to create a new file for each of them in the `_categories` folder. The title of this new file must match the way you wrote the author's name in the category line of the post's front matter.
+
+You can add a description or bio to each author's page in its respective file in `_categories`.
+
+Of course, this folder and the category files can be used to display other things than authors. You just have to change the title of the `categories.md` page in order to display your posts grouped by any category you choose.
+
+### Homepage
+
+By default, the homepage displays the ten newest posts. This number can be changed in the `config.yml` file.
+
+### Archives
+
+The archives page displays the integrality of the posts published on your site.
 
 ## Contributing
 
@@ -77,4 +89,6 @@ To add a custom directory to your theme-gem, please edit the regexp in `simply-c
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-##
+## Credits
+
+Thanks a lots to Quentin, Candice and Robinson, the people behind the conception of the original Internet Exploreur website who helped me a lot designing it.

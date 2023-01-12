@@ -2,7 +2,7 @@
 layout: post
 title: "Example Post n°02"
 date: 2022-11-15
-author:
+category:
   - "P_Quod"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed. Aliquet eget sit amet tellus cras adipiscing enim eu turpis. Maecenas ultricies mi eget mauris pharetra et ultrices. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Elit ullamcorper dignissim cras tincidunt. Facilisis volutpat est velit egestas. Semper viverra nam libero justo laoreet sit amet cursus sit. Enim ut sem viverra aliquet eget sit amet. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. In nibh mauris cursus mattis molestie a.

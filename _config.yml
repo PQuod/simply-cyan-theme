@@ -53,16 +53,16 @@ plugins:
 # 5. Collections
 # Authors's list
 collections:
-  authors:
+  categories:
     output: true
     permalink: /:collection/:name/
 
 defaults:
   - scope:
       path: ""
-      type: author
+      type: category
     values:
-      layout: "author"
+      layout: "categories"
 
 # 6. Jekyll settings
 permalink: pretty # Permalink will be /YYY/MM/DD/page-name/

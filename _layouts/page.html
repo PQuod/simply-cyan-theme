@@ -4,7 +4,7 @@ layout: default
 <article>
   <h1>{{ page.title }}</h1>
   {% assign biocontent = page.content | strip_newlines %}
-  {% unless page.collection == "authors" and biocontent == '' %}
+  {% unless page.collection == "categories" and biocontent == '' %}
     <div class="page-typo-type">
       <label class="typo-dys-label" aria-label="typo sans-serif" for="typo-dys"></label>
     </div>

@@ -23,7 +23,7 @@ encoding: utf-8
 description: "An amazing website" # The description of the site
 copyright: "© It belongs to me." # The mentions that appear in the site's footer
 url: "" # The base hostname for you site, e.g. http://mysite.com
-baseurl: "" # The subpath of your site, e.g. /blog
+baseurl: "/simply-cyan-theme" # The subpath of your site, e.g. /blog
 repo:
 email: youremail@something.com # The owner's email
 # google_analytics: ""
